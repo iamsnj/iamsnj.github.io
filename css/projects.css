@@ -1,10 +1,10 @@
 /* Project CSS */
 
 .project {
-  color: rgb(45, 161, 182);
+  color: azure;
   font-size: 1.8em;
   text-align: justify;
-  font-family: "Verdana";
+  font-family: Arial, Helvetica, sans-serif, courier;
   list-style-type:none;
   font-weight: bold;
   border: 2px solid gray;
