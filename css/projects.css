@@ -1,0 +1,53 @@
+/* Project CSS */
+
+.project {
+  color: rgb(45, 161, 182);
+  font-size: 20px;
+  text-align: justify;
+  font-family: "Verdana";
+  margin-left: 80px;
+  list-style-type:none;
+  font-weight: bold;
+
+  width: 800px;
+  padding: 10px 10px;
+  border: 2px solid gray;
+  margin: auto;
+}
+
+.project-head {
+  background-color: #f6e9d9;
+  padding: 2px 2px;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+}
+
+.offer-date {
+	display: block;
+    border-top: 4px solid #a7a59b;
+    background-color: #f6e9d9;
+    height: 22px;
+    line-height: 22px;
+    padding: 4px 6px;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 13px;
+    clear:both;
+}
+
+.offer-date .offer {
+  display: block;
+  float: left;
+}
+
+.offer-date .date {
+  display: block;
+  float: right;
+}
+
+.list{
+	list-style-type: square;
+	padding-left: 2em;
+}
