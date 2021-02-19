@@ -44,7 +44,7 @@ https://templatemo.com/tm-512-moonlight
 <body>
     <div class="navbar navbar-dark bg-dark">
         <span class="navbar-text text-info">
-          <marquee scrollamount="5">Website is under Development Mode</marquee>
+            <marquee scrollamount="5">Website is under Development</marquee>
         </span>
     </div>
 
@@ -176,56 +176,83 @@ https://templatemo.com/tm-512-moonlight
             <div class="content fourth-content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12 col-sm-6">
-                            <div class="item">
-                                <div class="thumb project">
-                                    <div class="text-center">
-                                        <h3>Introduction to CP</h3>
+                        <button type="button" id="project-btn" class="col-md-6 btn btn-primary btn-lg">Projects</button>
+                        <button type="button" id="open-src-btn" class="col-md-6 btn btn-success btn-lg">Open Source</button>
+
+                        <div id="projects" style="display: none;">
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item">
+                                    <div class="thumb project">
+                                        <div class="text-center">
+                                            <h3>Introduction to CP</h3>
+                                        </div>
+                                        <div>
+                                            <ul class="list">
+                                                <li>Introduction to Competitive Programming.</li>
+                                                <li>Learned algorithms like BFS, DFS on graph and new data structures
+                                                    like
+                                                    Sets
+                                                    and Vectors.</li>
+                                                <li>Started competitive coding on online judges like Codeforces,
+                                                    Codechef,
+                                                    Hackerrank etc.</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <ul class="list">
-                                            <li>Introduction to Competitive Programming.</li>
-                                            <li>Learned algorithms like BFS, DFS on graph and new data structures like
-                                                Sets
-                                                and Vectors.</li>
-                                            <li>Started competitive coding on online judges like Codeforces, Codechef,
-                                                Hackerrank etc.</li>
-                                        </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item">
+                                    <div class="thumb project">
+                                        <div class="text-center">
+                                            <h3>Software Development Project</h3>
+                                        </div>
+                                        <div>
+                                            <ul class="list">
+                                                <li>Created a Web App aimed at reducing manual checking of students data
+                                                    using Automation.</li>
+                                                <li>Developed a login based system using Python’s web framework Flask.</li>
+                                                <li>Implemented the SQLite database and the app was deployed on ​
+                                                    Heroku.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item">
+                                    <div class="thumb project">
+                                        <div class="text-center">
+                                            <h3>Build a game with Pygame</h3>
+                                        </div>
+                                        <div>
+                                            <ul class="list">
+                                                <li>Learned how to fetch input from keyboard and mouse using ​ PyGame
+                                                    packages.</li>
+                                                <li>Used various operations like ​ Load, Transform ​ and​ Display
+                                                    Images​
+                                                    with PyGame.</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 col-sm-6">
-                            <div class="item">
-                                <div class="thumb project">
-                                    <div class="text-center">
-                                        <h3>Software Development Project</h3>
-                                    </div>
-                                    <div>
-                                        <ul class="list">
-                                            <li>Created a Web App aimed at reducing manual checking of students data
-                                                using Automation.</li>
-                                            <li>Developed a login based system using Python’s web framework Flask.</li>
-                                            <li>Implemented the SQLite database and the app was deployed on ​ Heroku.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-6">
-                            <div class="item">
-                                <div class="thumb project">
-                                    <div class="text-center">
-                                        <h3>Build a game with Pygame</h3>
-                                    </div>
-                                    <div>
-                                        <ul class="list">
-                                            <li>Learned how to fetch input from keyboard and mouse using ​ PyGame
-                                                packages.</li>
-                                            <li>Used various operations like ​ Load, Transform ​ and​ Display Images​
-                                                with PyGame.</li>
-                                        </ul>
+                        <div id="open-source" style="display: none;">
+                            <div class="col-md-12 col-sm-6">
+                                <div class="item">
+                                    <div class="thumb project">
+                                        <div class="text-center">
+                                            <h3>Hactoberfest 2021</h3>
+                                        </div>
+                                        <div>
+                                            <ul class="list">
+                                                <li>It was my first open source contribution.</li>
+                                                <li>Learnt basic git commands.</li>
+                                                <li>contributed to some algorithms repos.</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -360,6 +387,21 @@ https://templatemo.com/tm-512-moonlight
                 log: function () { }
             };
         }
+        // projects slide
+        var button1 = document.getElementById('project-btn');
+        var button2 = document.getElementById('open-src-btn');
+        var div1 = document.getElementById('projects');
+        var div2 = document.getElementById('open-source');
+
+        button1.onclick = function() {
+            div1.style.display = 'block';
+            div2.style.display = 'none';
+        };
+
+        button2.onclick = function() {
+            div2.style.display = 'block';
+            div1.style.display = 'none';
+        };
     </script>
 </body>
 
