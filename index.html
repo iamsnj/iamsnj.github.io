@@ -58,22 +58,8 @@
         <div class="slide" id="2">
             <div class="content second-content">
                 <div class="container-fluid">
-                    <!-- <div class="col-md-10">
-                    <table class="table table-borderless table-dark">
-                        <tr>
-                            <td>I am a 3rd year CSE student and an aspiring Software Developer from IIT Kanpur,
-                                Batch'22. I completed my schooling from JNV. I bagged the scholarship for a two
-                                year
-                                IIT-JEE preparation program from "Dakshna Foundation".
-                                I am highly interested in Software Development and Machine Learning. Whenever
-                                possible
-                                I try to automate things with Python.</td>
-                            <td>Apart from study, I love to play cricket. Even, I follow cricket so much.</td>
-                        </tr>
-                    </table>
-                    </div> -->
                     <div class="row">
-                        <div class="col-md-10">
+                        <div class="col-md-10" style="margin-top: 1rem;">
                             <h2>About Me</h2>
                         </div>
                         <div class="col-md-6">
@@ -158,11 +144,16 @@
         <div class="slide" id="4">
             <div class="content fourth-content">
                 <div class="container-fluid">
-                    <div class="row">
-                        <button type="button" id="project-btn" class="col-md-6 btn btn-primary btn-lg">Projects</button>
-                        <button type="button" id="open-src-btn" class="col-md-6 btn btn-success btn-lg">Open
-                            Source</button>
+                    <div class="row" style="margin-top: 1rem;">
+                        <div class="btn-group gap-2" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="project-btn" autocomplete="off"
+                                checked>
+                            <label class="btn btn-outline-primary btn-lg" for="project-btn">Projects</label>
 
+                            <input type="radio" class="btn-check" name="btnradio" id="open-src-btn" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-lg" for="open-src-btn">Open Source</label>
+
+                        </div>
                         <div id="projects">
                             <div class="col-md-12 col-sm-6">
                                 <div class="item">
