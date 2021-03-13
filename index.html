@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +11,6 @@
     <script async src="js/bootstrap.bundle.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMKH06FYJ5"></script>
 </head>
-
 <body>
     <nav>
         <div class="navbar navbar-dark bg-dark">
@@ -131,7 +129,6 @@
                                                 </tbody>
                                             </table>
                                             <div class="main-btn"><a href="#4">Read More</a></div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -152,7 +149,6 @@
 
                             <input type="radio" class="btn-check" name="btnradio" id="open-src-btn" autocomplete="off">
                             <label class="btn btn-outline-primary btn-lg" for="open-src-btn">Open Source</label>
-
                         </div>
                         <div id="projects">
                             <div class="col-md-12 col-sm-6">
@@ -232,7 +228,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="slide" id="5">
@@ -280,49 +275,8 @@
             </div>
         </div>
     </div>
-
     <script sync src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
     <script type="text/javascript">
-        $(document).ready(function () {
-            // navigation click actions 
-            $('.scroll-link').on('click', function (event) {
-                event.preventDefault();
-                var sectionID = $(this).attr("data-id");
-                scrollToID('#' + sectionID, 750);
-            });
-            // scroll to top action
-            $('.scroll-top').on('click', function (event) {
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 'slow');
-            });
-            // mobile nav toggle
-            $('#nav-toggle').on('click', function (event) {
-                event.preventDefault();
-                $('#main-nav').toggleClass("open");
-            });
-        });
-        // scroll function
-        function scrollToID(id, speed) {
-            var offSet = 0;
-            var targetOffset = $(id).offset().top - offSet;
-            var mainNav = $('#main-nav');
-            $('html,body').animate({
-                scrollTop: targetOffset
-            }, speed);
-            if (mainNav.hasClass("open")) {
-                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-                mainNav.removeClass("open");
-            }
-        }
-        if (typeof console === "undefined") {
-            console = {
-                log: function () { }
-            };
-        }
-        // projects slide
         var button1 = document.getElementById('project-btn');
         var button2 = document.getElementById('open-src-btn');
         var div1 = document.getElementById('projects');
@@ -338,7 +292,6 @@
     </script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
