@@ -47,7 +47,7 @@ nav a:hover::before{-webkit-animation:fill .7s forwards ease-in-out;animation:fi
 .slides .slide img{width:100%}
 .main-btn a:hover{background-color:#fff;color:#232323!important}
 .first-content{padding:100px;text-align:left;padding-top:13%}
-.first-content .author-image img{margin-top:15px;border-radius:100px;max-width:100%;overflow:hidden;float:left;margin-right:35px}
+.first-content .author-image img{margin-top:15px;border-radius:60px;max-width:100%;overflow:hidden;float:left;margin-right:35px;padding: 1rem;}
 .first-content h2{font-size:36px;text-transform:uppercase;font-weight:700;color:#fff;letter-spacing:.5px;border-bottom:2px solid #fff;display:inline-block;padding-bottom:10px;margin-bottom:20px;margin-top:0}
 .first-content p{color:#fff;font-size:13px;text-transform:uppercase;font-weight:300;letter-spacing:2px;line-height:26px;margin-bottom:20px}
 .first-content em{font-style:normal;font-weight:600}
