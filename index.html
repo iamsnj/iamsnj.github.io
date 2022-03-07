@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/template.css">
     <link rel="stylesheet" href="css/projects.css">
-    <link id="favicon" rel="shortcut icon" href="/img/logo_icon.jpg" type="image"/>
+    <link id="favicon" rel="shortcut icon" href="/img/logo_icon.jpg" type="image" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script async src="js/bootstrap.bundle.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMKH06FYJ5"></script>
@@ -146,14 +146,6 @@
             <div class="content fourth-content">
                 <div class="container-fluid">
                     <div class="row" style="margin-top: 1rem;">
-                        <!-- <div class="btn-group gap-2" role="group" aria-label="Basic radio toggle button group">
-                            <input type="radio" class="btn-check" name="btnradio" id="project-btn" autocomplete="off"
-                                checked>
-                            <label class="btn btn-outline-primary btn-lg" for="project-btn">Projects</label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="open-src-btn" autocomplete="off">
-                            <label class="btn btn-outline-primary btn-lg" for="open-src-btn">Open Source</label>
-                        </div> -->
                         <div id="projects">
                             <div class="col-md-12 col-sm-6">
                                 <div class="item">
@@ -188,7 +180,7 @@
                                             <ul class="list">
                                                 <li>Source language was C and Python is used as implementation language.
                                                 </li>
-                                                <li>Build a lexer and parser in Python using Python’s PLY package.</li>
+                                                <li>Build a lexer and parser in Python using Python's PLY package.</li>
                                                 <li>Created abstract syntax tree after semantic analysis.</li>
                                             </ul>
                                         </div>
@@ -205,10 +197,9 @@
                                             <ul class="list">
                                                 <li>Created a Web App aimed at reducing manual checking of students data
                                                     using Automation.</li>
-                                                <li>Developed a login based system using Python’s web framework Flask.
+                                                <li>Developed a login based system using Python's web framework Flask.
                                                 </li>
-                                                <li>Implemented the SQLite database and the app was deployed on ​
-                                                    Heroku.
+                                                <li>Implemented the SQLite database and the app was deployed on Heroku.
                                                 </li>
                                             </ul>
                                         </div>
@@ -241,35 +232,17 @@
                                         </div>
                                         <div>
                                             <ul class="list">
-                                                <li>Learned how to fetch input from keyboard and mouse using ​ PyGame
+                                                <li>Learned how to fetch input from keyboard and mouse using PyGame
                                                     packages.
                                                 </li>
-                                                <li>Used various operations like ​ Load, Transform ​ and​ Display
-                                                    Images​ with PyGame.</li>
+                                                <li>Used various operations like Load, Transform and Display
+                                                    Images with PyGame.</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div id="open-source" style="display: none;">
-                            <div class="col-md-12 col-sm-6">
-                                <div class="item">
-                                    <div class="thumb project">
-                                        <div class="text-center">
-                                            <h3>Hactoberfest 2020</h3>
-                                        </div>
-                                        <div>
-                                            <ul class="list">
-                                                <li>It was my first open source contribution.</li>
-                                                <li>Learnt basic git commands.</li>
-                                                <li>contributed to some algorithms repos.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -280,18 +253,24 @@
                     <div class="row">
                         <div class="col-md-6"></div>
                         <div class="col-md-6">
-                            <form id="contact" action="https://ran-things.herokuapp.com/mail" method="post">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-8">
+                                    <div id="msg" class="font-monospace">Message sent successfully!</div>
+                                </div>
+                            </div>
+                            <form id="contact" name="contact" method="post">
                                 <div class="row">
                                     <div class="col-md-10">
                                         <fieldset>
                                             <input name="name" type="text" class="form-control" id="name"
-                                                placeholder="Your name" required>
+                                                placeholder="Your name (optional)">
                                         </fieldset>
                                     </div>
                                     <div class="col-md-10">
                                         <fieldset>
                                             <input name="email" type="email" class="form-control" id="email"
-                                                placeholder="Your email" required>
+                                                placeholder="Your email (optional)">
                                         </fieldset>
                                     </div>
                                     <div class="col-md-10">
@@ -321,18 +300,18 @@
     </div>
     <script sync src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript">
-        var button1 = document.getElementById('project-btn');
-        var button2 = document.getElementById('open-src-btn');
-        var div1 = document.getElementById('projects');
-        var div2 = document.getElementById('open-source');
-        button1.onclick = function () {
-            div1.style.display = 'block';
-            div2.style.display = 'none';
-        };
-        button2.onclick = function () {
-            div2.style.display = 'block';
-            div1.style.display = 'none';
-        };
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyX0GAlNZhv1zwgnB0IGLrvYTfOMlHj6z-h3i4htSlbkNSvN9gcmO1rd6tPvdoIpTGTsA/exec';
+        const form = document.forms['contact'];
+        let message = document.getElementById('message');
+
+        form.addEventListener('submit', e => {
+            message.value = $.trim(message.value);
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(msg.style.display = 'block')
+                .catch(error => console.error('Error!', error.message));
+            form.reset();
+        })
     </script>
     <script>
         window.dataLayer = window.dataLayer || [];
