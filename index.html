@@ -1,326 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sanjay Kumar</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/template.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link id="favicon" rel="shortcut icon" href="/img/logo_icon.jpg" type="image" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script async src="js/bootstrap.bundle.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMKH06FYJ5"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Kumar - Senior Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav>
-        <div class="navbar navbar-dark bg-dark">
-            <span class="navbar-text text-info">
-                <marquee scrollamount="5">Website is under Development</marquee>
-            </span>
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
-            <li><a href="#2"><i class="fa fa-user"></i> <em>About</em></a></li>
-            <li><a href="#3"><i class="fa fa-graduation-cap"></i> <em>Education</em></a></li>
-            <li><a href="#4"><i class="fa fa-code"></i> <em>Projects/Work</em></a></li>
-            <li><a href="#5"><i class="fa fa-envelope"></i> <em>Contact</em></a></li>
-        </ul>
     </nav>
-    <div class="slides">
-        <div class="slide" id="1">
-            <div class="content first-content">
-                <div class="container-fluid">
-                    <div class="col-md-3">
-                        <div class="author-image"><img src="img/author_image.jpg" alt="Author Image"></div>
-                    </div>
-                    <div class="col-md-9">
-                        <h2>Sanjay Kumar</h2>
-                        <br>
-                        <div>
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><a href="https://github.com/iamsnj" target="_blank"><i
-                                            class="fa fa-github"></i></a></li>
-                                <li class="list-inline-item"><a href="mailto:skdakshana18@gmail.com" target="_blank"><i
-                                            class="fa fa-envelope"></i></a></li>
-                                <li class="list-inline-item">
-                                    <a href="https://www.linkedin.com/in/iamsnj/" target="_blank"><i
-                                            class="fa fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="main-btn"><a href="#2">Read More</a></div>
-                    </div>
-                </div>
-            </div>
+    <header id="home" class="hero">
+        <div class="container">
+            <h1>Sanjay Kumar</h1>
+            <p>Senior Software Engineer</p>
+            <p class="summary">Back-end Engineer with strong expertise in scalable architectures, concurrency design, and secure authentication. Proven track record of re-architecting critical systems, optimizing real-time data flow, and building high-throughput task execution frameworks. Skilled in Java, Spring Boot, Docker, MQTT, and modern CI/CD workflows.</p>
         </div>
-        <div class="slide" id="2">
-            <div class="content second-content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-10" style="margin-top: 1rem;">
-                            <h2>About Me</h2>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="left-content">
-                                <div>
-                                    <p>
-                                        I am a 4th year CSE student and an aspiring Software Developer from IIT Kanpur,
-                                        Batch'22.
-                                        I completed my schooling from JNV. I bagged the scholarship for a two
-                                        year
-                                        IIT-JEE preparation program from "Dakshna Foundation".
-                                        I am highly interested in Software Development and Machine Learning. Whenever
-                                        possible
-                                        I try to automate things with Python.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="right-content">
-                                <h2></h2>
-                                <div>
-                                    <p>
-                                        I am working at TomTom as a software engineering intern. I am always open to
-                                        learn new things.
-                                        Apart from study, I love to play cricket. Even, I follow cricket so much.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-btn"><a href="#3">Read More</a></div>
-                    </div>
-                </div>
-            </div>
+    </header>
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Senior Software Engineer</h3>
+            <p><strong>Vimaan</strong> | Jun 2022 - Current | Bengaluru, India</p>
+            <ul>
+                <li>Re-architected Authentication Flow: Designed and implemented SSO (OIDC) authentication. Introduced secure session handling, encrypted PII, and enforced robust access controls to significantly improve platform security.</li>
+                <li>Dynamic Operator UI Orchestration: Led UI re-architecture to reduce firmware data latency and increase modularity. Enabled flexible state injection, dynamic component rendering, and declarative styling/actions (API, firmware).</li>
+                <li>Station Concurrency Framework: Designed a per-scan-UUID task orchestration system using station-level thread pools. Ensured strict task ordering and sync-then-async execution with robust thread safety using Java concurrency primitives like Thread, ReentrantLock, Condition, and Semaphore.</li>
+                <li>API Gateway Ownership: Improved gateway performance with token caching and API throttling. Hardened security using Spring Security and custom headers to prevent web exploits.</li>
+                <li>WebSocket + MQTT Integration: Developed Angular WebSocket clients for real-time UI updates. Built MQTT lifecycle-managed backend for reliable telemetry communication with firmware.</li>
+                <li>CI/CD & Debugging Enhancements: Automated CI checks for unit tests, linting, and coverage. Utilized Linux tools (e.g., tcpdump, awk, grep) for in-depth microservice and network debugging.</li>
+            </ul>
         </div>
-        <div class="slide" id="3">
-            <div class="content third-content">
-                <div class="container-fluid">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="first-section">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-sm-10 col-md-10">
-                                            <h2>Education</h2>
-                                            <table class="table table-hover table-dark">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Institute</th>
-                                                        <th scope="col">Degree</th>
-                                                        <th scope="col">Year</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Indian Institute of Technology, Kanpur</td>
-                                                        <td>B.Tech</td>
-                                                        <td>2018-Present</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jawahar Navodaya Vidyalaya, Banglore Urban</td>
-                                                        <td>Intermediate</td>
-                                                        <td>2016-2018</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jawahar Navodaya Vidyalaya, Auraiya</td>
-                                                        <td>High School</td>
-                                                        <td>2011-2016</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <div class="main-btn"><a href="#4">Read More</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="job">
+            <h3>Software Engineering Intern</h3>
+            <p><strong>TomTom</strong> | Jun 2021 - Aug 2021 | Remote</p>
+            <ul>
+                <li>Researched map quality using SWOT analysis across Google Maps, OSM, and TomTom.</li>
+                <li>Implemented user interaction tracking in Angular-based reporting dashboard.</li>
+            </ul>
         </div>
-        <div class="slide" id="4">
-            <div class="content fourth-content">
-                <div class="container-fluid">
-                    <div class="row" style="margin-top: 1rem;">
-                        <div id="projects">
-                            <div class="col-md-12 col-sm-6">
-                                <div class="item">
-                                    <div class="thumb project">
-                                        <div class="text-center">
-                                            <h3 class="project-title">Software Engineer Intern | TomTom</h3>
-                                        </div>
-                                        <div>
-                                            <ul class="list">
-                                                <li>Worked with mapshare reports team which is responsible for
-                                                    optimizing maps based on users feedback.</li>
-                                                <li>Analyze different maps services such as Google Maps, Open Street
-                                                    Maps through SWOT analysis and compared them with TomTom maps.</li>
-                                                <li>Identified gaps in the Tom Tom maps product that were resulting in
-                                                    bad user experience.</li>
-                                                <li>Recommended solutions for closing the loop holes in order to provide
-                                                    better customer experience and satisfaction.</li>
-                                                <li>Worked with Angular Framework and implemented map zoom and map move
-                                                    events for two reports.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-6">
-                                <div class="item">
-                                    <div class="thumb project">
-                                        <div class="text-center">
-                                            <h3 class="project-title">Cross Compiler</h3>
-                                        </div>
-                                        <div>
-                                            <ul class="list">
-                                                <li>Source language was C and Python is used as implementation language.
-                                                </li>
-                                                <li>Build a lexer and parser in Python using Python's PLY package.</li>
-                                                <li>Created abstract syntax tree after semantic analysis.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-6">
-                                <div class="item">
-                                    <div class="thumb project">
-                                        <div class="text-center">
-                                            <h3 class="project-title">Software Development Project</h3>
-                                        </div>
-                                        <div>
-                                            <ul class="list">
-                                                <li>Created a Web App aimed at reducing manual checking of students data
-                                                    using Automation.</li>
-                                                <li>Developed a login based system using Python's web framework Flask.
-                                                </li>
-                                                <li>Implemented the SQLite database and the app was deployed on Heroku.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-6">
-                                <div class="item">
-                                    <div class="thumb project">
-                                        <div class="text-center">
-                                            <h3 class="project-title">Introduction to CP</h3>
-                                        </div>
-                                        <div>
-                                            <ul class="list">
-                                                <li>Introduction to Competitive Programming.</li>
-                                                <li>Learned algorithms like BFS, DFS on graph and new data structures
-                                                    like Sets and Vectors.</li>
-                                                <li>Started competitive coding on online judges like Codeforces,
-                                                    Codechef, Hackerrank etc.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-6">
-                                <div class="item">
-                                    <div class="thumb project">
-                                        <div class="text-center">
-                                            <h3 class="project-title">Build a game with Pygame</h3>
-                                        </div>
-                                        <div>
-                                            <ul class="list">
-                                                <li>Learned how to fetch input from keyboard and mouse using PyGame
-                                                    packages.
-                                                </li>
-                                                <li>Used various operations like Load, Transform and Display
-                                                    Images with PyGame.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </section>
+    <section id="projects" class="container hidden-section">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Sample Project 1: Awesome Utility Suite</h3>
+            <p>Description: A collection of command-line tools to automate common development tasks, built with Python. Features include file processing, code generation, and environment management.</p>
+            <p><strong>Technologies used:</strong> Python, Click, Docker</p>
+            <p><a href="#">Link to Repository (GitHub)</a> | <a href="#">Link to Live Demo (if applicable)</a></p>
         </div>
-        <div class="slide" id="5">
-            <div class="content fifth-content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6"></div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <div class="col-md-8">
-                                    <div id="msg" class="font-monospace">Message sent successfully!</div>
-                                </div>
-                            </div>
-                            <form id="contact" name="contact" method="post">
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <fieldset>
-                                            <input name="name" type="text" class="form-control" id="name"
-                                                placeholder="Your name (optional)">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <fieldset>
-                                            <input name="email" type="email" class="form-control" id="email"
-                                                placeholder="Your email (optional)">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <fieldset>
-                                            <input name="subject" type="text" class="form-control" id="subject"
-                                                placeholder="Subject" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <fieldset>
-                                            <textarea name="message" rows="6" class="form-control" id="message"
-                                                placeholder="Your message" required></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <fieldset>
-                                            <button type='submit'>Submit</button>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="project-item">
+            <h3>Sample Project 2: Personal Portfolio Website V1</h3>
+            <p>Description: My previous personal website (now archived!), built to learn the fundamentals of web development. Focused on clean HTML, CSS, and basic JavaScript.</p>
+            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+            <p><a href="#">Link to Repository (GitHub)</a></p>
         </div>
-    </div>
-    <script sync src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript">
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyX0GAlNZhv1zwgnB0IGLrvYTfOMlHj6z-h3i4htSlbkNSvN9gcmO1rd6tPvdoIpTGTsA/exec';
-        const form = document.forms['contact'];
-        let message = document.getElementById('message');
-
-        form.addEventListener('submit', e => {
-            message.value = $.trim(message.value);
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(msg.style.display = 'block')
-                .catch(error => console.error('Error!', error.message));
-            form.reset();
-        })
-    </script>
+        <div class="project-item">
+            <h3>Sample Project 3: IoT Data Logger</h3>
+            <p>Description: A Raspberry Pi-based sensor data logger that collects environmental data and sends it to a cloud platform for visualization. Explored MQTT for data transmission.</p>
+            <p><strong>Technologies used:</strong> Python, Raspberry Pi, MQTT, InfluxDB</p>
+            <p><a href="#">Link to Repository (GitHub)</a></p>
+        </div>
+    </section>
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java: Java Concurrency, Multithreading</li>
+            <li>Spring Boot, Spring Web Security</li>
+            <li>WebSocket, MQTT</li>
+            <li>OIDC, OAuth 2.0</li>
+            <li>Python3, Bash Scripting</li>
+            <li>Docker, Docker-compose</li>
+            <li>Nginx</li>
+            <li>CI/CD Pipelines (e.g., Jenkins, GitLab CI)</li>
+            <li>Unit Testing & TDD</li>
+            <li>Agile Methodologies</li>
+            <li>System Design & Architecture</li>
+            <li>Microservices</li>
+            <li>Linux & Command-line Tools (grep, awk, tcpdump)</li>
+        </ul>
+    </section>
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Bachelor of Technology: Computer Science And Engineering</h3>
+            <p>Indian Institute of Technology Kanpur | Graduated: May 2022 | Kanpur</p>
+        </div>
+        <div class="education-item">
+            <h3>Senior Secondary</h3>
+            <p>Jawahar Navodaya Vidyalaya | Completed: Mar 2018 | Bengaluru, India</p>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Feel free to reach out!</p>
+        <p>Email: <a href="mailto:skdakshana18@gmail.com">skdakshana18@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/iamsnj/" target="_blank">linkedin.com/in/iamsnj</a></p>
+        <p>GitHub: <a href="https://github.com/iamsnj/" target="_blank">github.com/iamsnj</a></p>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sanjay Kumar. All rights reserved. | <a href="old/index.html">View Old Site</a></p>
+        </div>
+    </footer>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-SMKH06FYJ5');
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId.length > 1 && document.querySelector(targetId)) {
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
     </script>
 </body>
-
 </html>
+
