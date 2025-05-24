@@ -1,132 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sanjay Kumar - Senior Software Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav id="navbar">
-        <div class="container">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <header id="home" class="hero">
-        <div class="container">
-            <h1>Sanjay Kumar</h1>
-            <p>Senior Software Engineer</p>
-            <p class="summary">Back-end Engineer with strong expertise in scalable architectures, concurrency design, and secure authentication. Proven track record of re-architecting critical systems, optimizing real-time data flow, and building high-throughput task execution frameworks. Skilled in Java, Spring Boot, Docker, MQTT, and modern CI/CD workflows.</p>
-        </div>
+      <div class="container">
+        <h1>Sanjay Kumar</h1>
+        <p class="title-sub">Senior Software Engineer</p>
+        <p class="summary">
+          Back-end Engineer with strong expertise in scalable architectures,
+          concurrency design, and secure authentication. Proven track record of
+          re-architecting critical systems, optimizing real-time data flow, and
+          building high-throughput task execution frameworks. Skilled in Java,
+          Spring Boot, Docker, MQTT, and modern CI/CD workflows.
+        </p>
+      </div>
     </header>
     <section id="experience" class="container">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Senior Software Engineer</h3>
-            <p><strong>Vimaan</strong> | Jun 2022 - Current | Bengaluru, India</p>
-            <ul>
-                <li>Re-architected Authentication Flow: Designed and implemented SSO (OIDC) authentication. Introduced secure session handling, encrypted PII, and enforced robust access controls to significantly improve platform security.</li>
-                <li>Dynamic Operator UI Orchestration: Led UI re-architecture to reduce firmware data latency and increase modularity. Enabled flexible state injection, dynamic component rendering, and declarative styling/actions (API, firmware).</li>
-                <li>Station Concurrency Framework: Designed a per-scan-UUID task orchestration system using station-level thread pools. Ensured strict task ordering and sync-then-async execution with robust thread safety using Java concurrency primitives like Thread, ReentrantLock, Condition, and Semaphore.</li>
-                <li>API Gateway Ownership: Improved gateway performance with token caching and API throttling. Hardened security using Spring Security and custom headers to prevent web exploits.</li>
-                <li>WebSocket + MQTT Integration: Developed Angular WebSocket clients for real-time UI updates. Built MQTT lifecycle-managed backend for reliable telemetry communication with firmware.</li>
-                <li>CI/CD & Debugging Enhancements: Automated CI checks for unit tests, linting, and coverage. Utilized Linux tools (e.g., tcpdump, awk, grep) for in-depth microservice and network debugging.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Software Engineering Intern</h3>
-            <p><strong>TomTom</strong> | Jun 2021 - Aug 2021 | Remote</p>
-            <ul>
-                <li>Researched map quality using SWOT analysis across Google Maps, OSM, and TomTom.</li>
-                <li>Implemented user interaction tracking in Angular-based reporting dashboard.</li>
-            </ul>
-        </div>
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Senior Software Engineer</h3>
+        <p class="company-details">
+          <strong>Vimaan</strong> | Jun 2022 - Current | Bengaluru, India
+        </p>
+        <ul>
+          <li>
+            Re-architected Authentication Flow: Designed and implemented SSO
+            (OIDC) authentication. Introduced secure session handling, encrypted
+            PII, and enforced robust access controls to significantly improve
+            platform security.
+          </li>
+          <li>
+            Dynamic Operator UI Orchestration: Led UI re-architecture to reduce
+            firmware data latency and increase modularity. Enabled flexible
+            state injection, dynamic component rendering, and declarative
+            styling/actions (API, firmware).
+          </li>
+          <li>
+            Station Concurrency Framework: Designed a per-scan-UUID task
+            orchestration system using station-level thread pools. Ensured
+            strict task ordering and sync-then-async execution with robust
+            thread safety using Java concurrency primitives like Thread,
+            ReentrantLock, Condition, and Semaphore.
+          </li>
+          <li>
+            API Gateway Ownership: Improved gateway performance with token
+            caching and API throttling. Hardened security using Spring Security
+            and custom headers to prevent web exploits.
+          </li>
+          <li>
+            WebSocket + MQTT Integration: Developed Angular WebSocket clients
+            for real-time UI updates. Built MQTT lifecycle-managed backend for
+            reliable telemetry communication with firmware.
+          </li>
+          <li>
+            CI/CD & Debugging Enhancements: Automated CI checks for unit tests,
+            linting, and coverage. Utilized Linux tools (e.g., tcpdump, awk,
+            grep) for in-depth microservice and network debugging.
+          </li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Software Engineering Intern</h3>
+        <p class="company-details">
+          <strong>TomTom</strong> | Jun 2021 - Aug 2021 | Remote
+        </p>
+        <ul>
+          <li>
+            Researched map quality using SWOT analysis across Google Maps, OSM,
+            and TomTom.
+          </li>
+          <li>
+            Implemented user interaction tracking in Angular-based reporting
+            dashboard.
+          </li>
+        </ul>
+      </div>
     </section>
-    <section id="projects" class="container hidden-section">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Sample Project 1: Awesome Utility Suite</h3>
-            <p>Description: A collection of command-line tools to automate common development tasks, built with Python. Features include file processing, code generation, and environment management.</p>
-            <p><strong>Technologies used:</strong> Python, Click, Docker</p>
-            <p><a href="#">Link to Repository (GitHub)</a> | <a href="#">Link to Live Demo (if applicable)</a></p>
-        </div>
-        <div class="project-item">
-            <h3>Sample Project 2: Personal Portfolio Website V1</h3>
-            <p>Description: My previous personal website (now archived!), built to learn the fundamentals of web development. Focused on clean HTML, CSS, and basic JavaScript.</p>
-            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
-            <p><a href="#">Link to Repository (GitHub)</a></p>
-        </div>
-        <div class="project-item">
-            <h3>Sample Project 3: IoT Data Logger</h3>
-            <p>Description: A Raspberry Pi-based sensor data logger that collects environmental data and sends it to a cloud platform for visualization. Explored MQTT for data transmission.</p>
-            <p><strong>Technologies used:</strong> Python, Raspberry Pi, MQTT, InfluxDB</p>
-            <p><a href="#">Link to Repository (GitHub)</a></p>
-        </div>
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>Sample Project 1: Awesome Utility Suite</h3>
+        <p>
+          Description: A collection of command-line tools to automate common
+          development tasks, built with Python. Features include file
+          processing, code generation, and environment management.
+        </p>
+        <p><strong>Technologies used:</strong> Python, Click, Docker</p>
+        <p>
+          <a href="#">Link to Repository (GitHub)</a> |
+          <a href="#">Link to Live Demo (if applicable)</a>
+        </p>
+      </div>
+      <div class="project-item">
+        <h3>Sample Project 2: Personal Portfolio Website V1</h3>
+        <p>
+          Description: My previous personal website (now archived!), built to
+          learn the fundamentals of web development. Focused on clean HTML, CSS,
+          and basic JavaScript.
+        </p>
+        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+        <p><a href="#">Link to Repository (GitHub)</a></p>
+      </div>
+      <div class="project-item">
+        <h3>Sample Project 3: IoT Data Logger</h3>
+        <p>
+          Description: A Raspberry Pi-based sensor data logger that collects
+          environmental data and sends it to a cloud platform for visualization.
+          Explored MQTT for data transmission.
+        </p>
+        <p>
+          <strong>Technologies used:</strong> Python, Raspberry Pi, MQTT,
+          InfluxDB
+        </p>
+        <p><a href="#">Link to Repository (GitHub)</a></p>
+      </div>
     </section>
     <section id="skills" class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java: Java Concurrency, Multithreading</li>
-            <li>Spring Boot, Spring Web Security</li>
-            <li>WebSocket, MQTT</li>
-            <li>OIDC, OAuth 2.0</li>
-            <li>Python3, Bash Scripting</li>
-            <li>Docker, Docker-compose</li>
-            <li>Nginx</li>
-            <li>CI/CD Pipelines (e.g., Jenkins, GitLab CI)</li>
-            <li>Unit Testing & TDD</li>
-            <li>Agile Methodologies</li>
-            <li>System Design & Architecture</li>
-            <li>Microservices</li>
-            <li>Linux & Command-line Tools (grep, awk, tcpdump)</li>
-        </ul>
+      <h2>Skills</h2>
+      <ul>
+        <li>Java: Java Concurrency, Multithreading</li>
+        <li>Spring Boot, Spring Web Security</li>
+        <li>WebSocket, MQTT</li>
+        <li>OIDC, OAuth 2.0</li>
+        <li>Python3, Bash Scripting</li>
+        <li>Docker, Docker-compose</li>
+        <li>Nginx</li>
+        <li>CI/CD Pipelines (e.g., Jenkins, GitLab CI)</li>
+        <li>Unit Testing & TDD</li>
+        <li>Agile Methodologies</li>
+        <li>System Design & Architecture</li>
+        <li>Microservices</li>
+        <li>Linux & Command-line Tools (grep, awk, tcpdump)</li>
+      </ul>
     </section>
     <section id="education" class="container">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>Bachelor of Technology: Computer Science And Engineering</h3>
-            <p>Indian Institute of Technology Kanpur | Graduated: May 2022 | Kanpur</p>
-        </div>
-        <div class="education-item">
-            <h3>Senior Secondary</h3>
-            <p>Jawahar Navodaya Vidyalaya | Completed: Mar 2018 | Bengaluru, India</p>
-        </div>
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Bachelor of Technology: Computer Science And Engineering</h3>
+        <p>
+          Indian Institute of Technology Kanpur | Graduated: May 2022 | Kanpur
+        </p>
+      </div>
+      <div class="education-item">
+        <h3>Senior Secondary</h3>
+        <p>
+          Jawahar Navodaya Vidyalaya | Completed: Mar 2018 | Bengaluru, India
+        </p>
+      </div>
     </section>
     <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
-        <p>Email: <a href="mailto:skdakshana18@gmail.com">skdakshana18@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/iamsnj/" target="_blank">linkedin.com/in/iamsnj</a></p>
-        <p>GitHub: <a href="https://github.com/iamsnj/" target="_blank">github.com/iamsnj</a></p>
+      <h2>Contact</h2>
+      <p class="intro-text">Feel free to reach out!</p>
+
+      <div class="contact-links-container">
+        <a href="mailto:skdakshana18@gmail.com" class="contact-link-item"
+          >Email Me</a
+        >
+        <a
+          href="https://www.linkedin.com/in/iamsnj/"
+          target="_blank"
+          class="contact-link-item"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/iamsnj/"
+          target="_blank"
+          class="contact-link-item"
+          >GitHub</a
+        >
+      </div>
+      <!-- Basic Contact Form Placeholder -->
     </section>
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Sanjay Kumar. All rights reserved. | <a href="old/index.html">View Old Site</a></p>
-        </div>
+      <div class="container">
+        <p>
+          &copy; 2025 Sanjay Kumar. All rights reserved. |
+          <a href="old/index.html">View Old Site</a>
+        </p>
+      </div>
     </footer>
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId.length > 1 && document.querySelector(targetId)) {
-                    document.querySelector(targetId).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          if (targetId.length > 1 && document.querySelector(targetId)) {
+            document.querySelector(targetId).scrollIntoView({
+              behavior: "smooth",
             });
+          }
         });
+      });
     </script>
-</body>
+  </body>
 </html>
-
